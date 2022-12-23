@@ -1,0 +1,26 @@
+{
+  "title": "iTerm2 windows via keybindings",
+  "rules": [
+    {
+      "description": "iTerm2 - New Window (CMD + Enter)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": [
+                "left_gui"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "osascript -e 'tell app \"iTerm2\"' -e 'create window with default profile' -e activate -e end"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

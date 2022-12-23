@@ -1,0 +1,27 @@
+{
+  "title": "Firefox window via keybindings",
+  "rules": [
+    {
+      "description": "Firefox - New Window (CMD + Shift + Enter)",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "return_or_enter",
+            "modifiers": {
+              "mandatory": [
+                "left_gui",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "/Applications/Firefox.app/Contents/MacOS/firefox --new-window"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
